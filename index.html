@@ -3,17 +3,34 @@
 
     <head>
         <style>
-            .top-one-side{
-                flex: 1;
-                justify-content:space-evenly;
-                }
-            .top-one{
-                flex: 3;
-            }
             .Top-bar{
                 display:flex;
-                flex-wrap: wrap;
                 flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .element-Top-bar{
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            .google-logo{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .search-box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            button{
+                width: 127px;
+                height: 36px;
+                border-radius: 0;
+                padding-left:16px;
+                padding-right: 16px; 
+                margin: 11px;
+                border:0.8px;
             }
         </style>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -23,23 +40,24 @@
 
     <body>
         <div>
-            <div class="Top-Bar">
-                <div class="top-one">
-
-                </div>
-                <div class="top-one-side">
-                    <a href=" ">Gmail</a>
-                    <a href=" ">Images</a>
-                    <a href=" "><i class="material-icons">apps</i></a>
-                    <a href=" "><img src="Assets\20201119_221739-removebg-preview (1).png" alt="Profile Image" style="width:32px;height:32px;border-radius:50%;"></a>
-                </div>
+            <div class="Top-bar">
+                <a style="padding: 5px;" href =" ">Gmail</a>
+                <a style="padding: 5px;" href=" ">Images</a>
+                <a style="padding: 5px;" href=" "><i class="material-icons">apps</i></a>
+                <a style="padding: 5px;" href=" "><img src="Assets\20201119_221739-removebg-preview (1).png" alt="Profile Image" style="width:32px;height:32px;border-radius:50%;"></a>
+            </div>
+            <div class="google-logo">
+                <img src="Assets\googlelogo_color_272x92dp.png" alt="google logo" style="width: 272px; height: 92px;">
             </div>
             <div>
-
+                <div class="search-box">
+                    <i class="material-icons">search</i>
+                    <input style="width: 527.4px; height: 34px;" type="text">
+                    <button>Google Search</button>
+                    <button style="width: 142px;">I'm Feeling Lucky</button>
+                </div>
             </div>
-            <div>
-
-            </div>
+            
             <div>
 
             </div>
