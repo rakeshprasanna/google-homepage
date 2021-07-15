@@ -17,11 +17,18 @@
                 display:flex;
                 justify-content: center;
                 align-items: center;
+                position: relative;
+                top:5.95em;
             }
             .search-box{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                position: relative;
+                flex-direction: column;
+                top:7.6em;
+                
+                
             }
             button{
                 width: 127px;
@@ -32,6 +39,90 @@
                 margin: 11px;
                 border:0.8px;
             }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #f2f2f2;
+                }
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .no-underline{
+               text-decoration: none;
+               cursor: pointer;
+               color: black;
+            }
+
+            .bottom-nav{
+                position: fixed;
+                bottom: 0;
+                min-width: 100%;
+                margin: 0;
+            }
+
+            body{
+                margin: 0;
+            }
+            .search-box-bar{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding:3px;
+                border: solid #e6e7eb 1px;
+                border-radius: 1.5em;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                
+            }
+
+            .search-box-bar:hover{
+                box-shadow:0 1px 1px rgba(0,0,0,.16);
+            }
+
+            .input-design:focus{
+                outline: none;
+            }
+
+            .material-icons{
+                color: #aaafb4;
+            }
+            .search-buttons{
+                font-family:arial,sans-serif;
+                position:absolute;
+                top:4.4em;
+                
+            }
+            .search-buttons button{
+                border-radius: 4px;
+                background-color: #f8f9fa;
+                margin: 4px;
+                color: #202124;
+                font-size: 14px;
+                letter-spacing: 0.2px;
+            }
+            .search-buttons button:hover{
+                box-shadow: 0 1px 1px rgba(0,0,0,.1);
+                background-color: #f8f9fa;
+                border: 1px solid #dadce0;
+                font-size: 14px;
+                color: #202124;
+            }
+            .button-feeling-lucky{
+                width: 146px;
+            }
+            .button-feeling-lucky:hover{
+                width: 146px;
+            }
         </style>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
@@ -41,32 +132,45 @@
     <body>
         <div>
             <div class="Top-bar">
-                <a style="padding: 5px;" href =" ">Gmail</a>
-                <a style="padding: 5px;" href=" ">Images</a>
-                <a style="padding: 5px;" href=" "><i class="material-icons">apps</i></a>
-                <a style="padding: 5px;" href=" "><img src="Assets\20201119_221739-removebg-preview (1).png" alt="Profile Image" style="width:32px;height:32px;border-radius:50%;"></a>
+                <a class="no-underline" style="padding: 8px;" href =" ">Gmail</a>
+                <a class="no-underline" style="padding: 8px;" href=" ">Images</a>
+              <div class="logo-alignment"><a class="no-underline" style="padding: 8px; height: 40px; width: 40px ;" href=" "><i class="material-icons">apps</i></a></div>
+                <a class="no-underline" style="padding: 8px;" href=" "><img src="Assets\20201119_221739-removebg-preview (1).png" alt="Profile Image" style="width:32px;height:32px;border-radius:50%;"></a>
             </div>
             <div class="google-logo">
                 <img src="Assets\googlelogo_color_272x92dp.png" alt="google logo" style="width: 272px; height: 92px;">
             </div>
             <div>
                 <div class="search-box">
-                    <i class="material-icons">search</i>
-                    <input style="width: 527.4px; height: 34px;" type="text">
-                    <button>Google Search</button>
-                    <button style="width: 142px;">I'm Feeling Lucky</button>
+                    <div class="search-box-bar">
+                        <span class="material-icons">search</span>
+                        <input class="input-design" style="width: 527.4px; height: 34px;border: none;" type="text">
+                    </div>
+                    <div class="search-buttons">
+                        <button>Google Search</button>
+                        <button class="button-feeling-lucky">I'm Feeling Lucky</button>
+                    </div>
+                    
                 </div>
             </div>
-            
-            <div>
 
+            <div class="bottom-nav">
+            <div>
+                <ul>
+                    <li>India</li>
+                </ul> 
             </div>
             <div>
-
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">About</a></li>
+                  </ul> 
             </div>
-            <div>
-
             </div>
+
+
         </div>
     </body>
 </html>
